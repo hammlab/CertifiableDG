@@ -36,6 +36,7 @@ A sample command to run an experiment is <code> python vanilla_wm.py </code>
 
 ### Training models with DR-DG method 
 The files with names containing "dr_dg" are the codes for training models with our DR-DG algorithm described in Alg 2 of the paper. These codes require an argument FACTOR to run. This argument can be any value but in the experiments we find using values between in [0.1, 0.5] works the best for most methods without the need for tuning any other hyperparameters such as the learning rates. 
+
 A sample command to run an experiment is <code> python dr_dg_wm.py --FACTOR 0.25 </code>
 
 ### Certifying Vanilla and DR-DG trained models
