@@ -15,7 +15,7 @@ Our empirical evaluation demonstrates the effectiveness of our method at signifi
 
 <hr>
 
-### The codes used to report the results in the paper <b>"[On Certifying and Improving Generalization to Unseen Domains](https://arxiv.org/abs/2107.03919)"</b> are present in this repository.
+### The codes used to report the results in the paper <b>"[On Certifying and Improving Generalization to Unseen Domains](https://arxiv.org/abs/2206.12364)"</b> are present in this repository.
 <hr>
 
 
