@@ -55,7 +55,14 @@ A sample command to run an experiment is <code> python cert_dg.py --NAME WM --FA
 If you find this useful for your work, please consider citing
 <pre>
 <code>
-
+@misc{mehra2022certifying,
+      title={On Certifying and Improving Generalization to Unseen Domains}, 
+      author={Akshay Mehra and Bhavya Kailkhura and Pin-Yu Chen and Jihun Hamm},
+      year={2022},
+      eprint={2206.12364},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 </code>
 </pre>
 	
