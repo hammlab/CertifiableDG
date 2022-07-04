@@ -35,7 +35,7 @@ Each folder contains files with "vanilla" in their names. These are codes for tr
 A sample command to run an experiment is <code> python vanilla_wm.py </code>
 
 ### Training models with DR-DG method 
-The files with names containing "dr_dg" are the codes for training models with our DR-DG algorithm described in Alg 2 of the paper. These codes require an argument FACTOR to run. This argument can be any value but in the experiments we find using values between in [0.1, 0.5] works the best for most methods without the need for tuning any other hyperparameters such as the learning rates. 
+The files with names containing "dr_dg" are the codes for training models with our DR-DG algorithm described in Alg. 2 of the paper. These codes require an argument FACTOR to run. This argument can be any value but in the experiments we find using values between in [0.1, 0.5] works the best for most methods without the need for tuning any other hyperparameters such as the learning rates. 
 
 A sample command to run an experiment is <code> python dr_dg_wm.py --FACTOR 0.25 </code>
 
@@ -43,10 +43,12 @@ A sample command to run an experiment is <code> python dr_dg_wm.py --FACTOR 0.25
 The models trained with "vanilla" and "dr_dg" can be certified using "cert_dg.py" as described below.
 
 Each folder contains a file named cert_dg.py which is used for certification of differnt models using our Cert-DG algorithm (Alg. 1 of the paper). The code requires three main and one optional argument.
-	a. NAME: which is used to indicate the name of the DG algorithm and can be one of WM, G2DM, CDAN or VREX.
-	b. METHOD: which is used to indicate whether Vanilla trained model needs to be certified or a model trained with DR-DG. Changing the variable METHOD in the code allows for this. Set METHOD = "vanilla_dg" for vanilla models or METHOD = "rep_dro_dg" for models trained with DR-DG.
-	c. FACTOR: For models trained with DR-DG, provide the FACTOR that was used during training. 
-	d. TARGET: (only used for debugging) To see performance of the models on a particular unseen domain supply the TARGET variable.
+	<ul>
+	<li> NAME: which is used to indicate the name of the DG algorithm and can be one of WM, G2DM, CDAN or VREX.</li>
+	<li> METHOD: which is used to indicate whether Vanilla trained model needs to be certified or a model trained with DR-DG. Changing the variable METHOD in the code allows for this. Set METHOD = "vanilla_dg" for vanilla models or METHOD = "rep_dro_dg" for models trained with DR-DG.</li>
+	<li> FACTOR: For models trained with DR-DG, provide the FACTOR that was used during training. </li>
+	<li> TARGET: (only used for debugging) To see performance of the models on a particular unseen domain supply the TARGET variable. </li>
+	</ul>
 	
 A sample command to run an experiment is <code> python cert_dg.py --NAME WM --FACTOR 0.5 </code> (for a DR_DG model with variable METHOD set to "rep_dro_dg")
   
