@@ -54,7 +54,7 @@ A sample command to run an experiment is <code> python cert_dg.py --NAME WM --FA
   
 #### Citing
 
-If you find this useful for your work, please consider citing
+If you find this repository useful for your work, please consider citing our work.
 <pre>
 <code>
 @misc{mehra2022certifying,
