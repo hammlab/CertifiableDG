@@ -49,10 +49,10 @@ The files with names containing "dr_dg" are the codes for training models with o
 
 A sample command to run an experiment is <code> python dr_dg_wm.py --FACTOR 0.25 </code>
 
-### Certifying Vanilla and DR-DG trained models
+### Evaluating the worst-case loss of Vanilla and DR-DG trained models
 The models trained with "vanilla" and "dr_dg" can be certified using "cert_dg.py" as described below.
 
-Each folder contains a file named cert_dg.py which is used for certification of differnt models using our Cert-DG algorithm (Alg. 1 of the paper). The code requires three main and one optional argument.
+Each folder contains a file named cert_dg.py which is used for certification of differnt models using our WC-DG algorithm (Alg. 1 of the paper). The code requires three main and one optional argument.
 	<ul>
 	<li> NAME: which is used to indicate the name of the DG algorithm and can be one of WM, G2DM, CDAN or VREX.</li>
 	<li> METHOD: which is used to indicate whether Vanilla trained model needs to be certified or a model trained with DR-DG. Changing the variable METHOD in the code allows for this. Set METHOD = "vanilla_dg" for vanilla models or METHOD = "rep_dro_dg" for models trained with DR-DG.</li>
