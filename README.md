@@ -1,4 +1,4 @@
-# On Certifying and Improving Generalization to Unseen Domains
+# Do Domain Generalization Methods Generalize Well?
 
 <p align = justify>
 Domain Generalization (DG) methods use data from multiple related source domains to learn models whose performance does not degrade on unseen domains
