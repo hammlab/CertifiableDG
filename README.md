@@ -1,21 +1,31 @@
 # On Certifying and Improving Generalization to Unseen Domains
 
 <p align = justify>
-Domain Generalization (DG) aims to learn models whose performance remains high on unseen domains encountered at test-time by using data from multiple related source domains. 
-Many existing DG algorithms reduce the divergence between source distributions in a representation space to potentially align the unseen domain close to the sources. 
-This is motivated by the analysis that explains generalization to unseen domains using distributional distance (such as the Wasserstein distance) to the sources.
-However, due to the openness of the DG objective, it is challenging to evaluate DG algorithms comprehensively using a few benchmark datasets.
-In particular, we demonstrate that accuracy of the models trained with DG methods varies significantly across unseen domains, generated from popular benchmark datasets.
-This highlights that the performance of DG methods on a few benchmark datasets may not be representative of their performance on unseen domains in the wild.
-To overcome this roadblock, we propose a universal certification framework based on distributionally robust optimization (DRO) that can efficiently certify the worst-case performance of any DG method. 
-This enables a data-independent evaluation of a DG method complementary to the empirical evaluations on benchmark datasets. 
-Furthermore, we propose a training algorithm that can be used with any DG method to provably improve their certified performance.
-Our empirical evaluation demonstrates the effectiveness of our method at significantly improving the worst-case loss (i.e., reducing the risk of failure of these models in the wild) without incurring a  significant performance drop on benchmark datasets. 
+Domain Generalization (DG) methods use data from multiple related source domains to learn models whose performance does not degrade on unseen domains
+at test time. Many DG algorithms rely on reducing the divergence between the
+source distributions in a representation space to potentially align unseen domains
+close to the sources. These algorithms are motivated by the analytical works that
+explain generalization to unseen domains based on their distributional distance
+(e.g., Wasserstein distance) to the sources. However, we show that the accuracy of
+a DG model varies significantly on unseen domains equidistant from the sources in
+the learned representation space. This makes it hard to gauge the generalization
+performance of DG models only based on their performance on benchmark datasets.
+Thus, we study the worst-case loss of a DG model at a particular distance from the
+sources and propose an evaluation methodology based on distributionally robust
+optimization that efficiently computes the worst-case loss on all distributions within
+a Wasserstein ball around the sources. Our results show that models trained with
+popular DG methods incur a high worst-case loss even close to the sources which
+show their lack of generalization to unseen domains. Moreover, we observe a
+large gap between the worst-case and the empirical losses of distributions at the
+same distance, showing the performance of the DG models on benchmark datasets
+is not representative of their performance on unseen domains. Thus, our (target) data-independent and worst-case loss-based methodology highlights the poor
+generalization performance of current DG models and provides insights beyond
+empirical evaluation on benchmark datasets for improving these models. 
 </p>
 
 <hr>
 
-### The codes used to report the results in the paper <b>"[On Certifying and Improving Generalization to Unseen Domains](https://arxiv.org/abs/2206.12364)"</b> are present in this repository.
+### The codes used to report the results in the paper <b>"[Do Domain Generalization Methods Generalize Well?](https://openreview.net/pdf?id=SRWIQ0Yl53m)"</b> are present in this repository.
 <hr>
 
 
