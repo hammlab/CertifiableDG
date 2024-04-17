@@ -67,9 +67,13 @@ A sample command to run an experiment is <code> python cert_dg.py --NAME WM --FA
 If you find this repository useful for your work, please consider citing our work.
 <pre>
 <code>
-@inproceedings{mehra2022domain,
-  title={Do Domain Generalization Methods Generalize Well?},
-  author={Mehra, Akshay and Kailkhura, Bhavya and Chen, Pin-Yu and Hamm, Jihun}
+@inproceedings{
+mehra2022do,
+title={Do Domain Generalization Methods Generalize Well?},
+author={Akshay Mehra and Bhavya Kailkhura and Pin-Yu Chen and Jihun Hamm},
+booktitle={NeurIPS ML Safety Workshop},
+year={2022},
+url={https://openreview.net/forum?id=SRWIQ0Yl53m}
 }
 </code>
 </pre>
